@@ -1,0 +1,44 @@
+@media only screen and (max-width: 767px) {
+  #tagline {
+    text-align: center;
+    color: aliceblue;
+    margin-top: -150px;
+    /* background-color: red; */
+    width: 70%;
+    height: 40vh;
+    margin-left: 70px;
+  }
+
+  #tagline h2 {
+    font-family: Encode Sans SC, sans-serif;
+    font-size: 3em;
+    text-align: left;
+  }
+
+  #nav-list {
+    top: 60%;
+    left: 15%;
+    width: 100%;
+  }
+
+  #page2-aboutus {
+    width: 100%;
+    /* background-color: brown; */
+    margin-top: 12px;
+  }
+
+  #page2-aboutus h2 {
+    margin-left: 10px;
+    font-size: xx-large;
+  }
+
+  #page2-aboutus p {
+    margin-left: 10px;
+    font-size: small;
+    width: 90%;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}

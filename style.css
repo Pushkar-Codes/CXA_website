@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -58,11 +59,11 @@ body {
   letter-spacing: 4px;
 } */
 
-#tageline {
+/* #tageline {
   position: absolute;
   z-index: 1;
   color: white;
-}
+} */
 
 #tagline {
   position: absolute;
@@ -70,7 +71,7 @@ body {
   left: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: aliceblue;
   z-index: 2;
   width: auto;
   /* background-color: red; */
@@ -78,6 +79,7 @@ body {
 }
 
 #tagline h2 {
+  font-family: Encode Sans SC, sans-serif;
   font-size: 5em;
   text-align: left;
 }
@@ -85,7 +87,7 @@ body {
 #nav-list {
   position: absolute;
   z-index: 1;
-  color: white;
+  color: aliceblue;
   top: 39%;
   left: 72%;
   width: 20%;
@@ -98,6 +100,7 @@ body {
   padding: 0;
   font-size: large;
   font-weight: 500;
+  font-family: Encode Sans SC, sans-serif;
 }
 
 #nav-list ul li {
@@ -111,4 +114,30 @@ body {
 #page2 {
   width: 100%;
   height: 100vh;
+  background-color: rgb(5, 18, 47);
+}
+
+#page2-aboutus {
+  /* background-color: brown; */
+  position: absolute;
+  margin-top: 60px;
+  width: 70%;
+}
+
+#page2-aboutus h2 {
+  font-family: Encode Sans SC, sans-serif;
+  font-size: 4em;
+  text-align: left;
+  color: aliceblue;
+  margin: 0 98px;
+  font-family: Encode Sans SC, sans-serif;
+}
+
+#page2-aboutus p {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  color: aliceblue;
+  margin-left: 98px;
+  margin-top: 10px;
 }

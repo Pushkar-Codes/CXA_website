@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CXA</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -19,6 +20,7 @@
         </div>
 
         <video
+          id="mainVideo"
           src="/videos/pexels-cottonbro-8721932 (2160p).mp4"
           muted
           autoplay
@@ -35,6 +37,7 @@
               <li>JOIN US</li>
               <li>EVENTS</li>
               <li>PROJECTS</li>
+              <li>BOARD MEMBERS</li>
               <li>
                 SRM UNIVERSITY SIKKIM<i class="ri-arrow-right-up-line"></i>
               </li>
@@ -42,7 +45,18 @@
           </ul>
         </div>
       </div>
-      <div id="page2"></div>
+      <div id="page2">
+        <div id="page2-aboutus">
+          <h2>ABOUT US</h2>
+          <p>
+            Welcome to CODE X ARTISANS – where innovation meets passion, and
+            coding transforms into an art form. At SRM University Sikkim, our
+            mission is to cultivate a vibrant coding culture within our campus,
+            bridging the gap and fostering a community of like-minded
+            individuals driven by the love for technology.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 
@@ -59,5 +73,33 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+
+  // Updating the background video here for smaller screen
+  <script>
+    function updateVideoSource() {
+      var videoElement = document.getElementById("mainVideo");
+
+      // Check the screen width using matchMedia
+      var isSmallScreen = window.matchMedia("(max-width: 767px)").matches;
+
+      // Log screen width for debugging
+      console.log("Screen Width:", window.innerWidth);
+
+      // Update video source based on screen width
+      videoElement.src = isSmallScreen
+        ? "videos/pexels-cottonbro-8721926 (2160p).mp4"
+        : "videos/pexels-cottonbro-8721932 (2160p).mp4";
+
+      // Log updated video source for debugging
+      console.log("Updated Video Source:", videoElement.src);
+
+      // Reload the video to apply the changes
+      videoElement.load();
+    }
+
+    // Update the video source on page load and window resize
+    window.addEventListener("load", updateVideoSource);
+    window.addEventListener("resize", updateVideoSource);
+  </script>
   <script src="app.js"></script>
 </html>

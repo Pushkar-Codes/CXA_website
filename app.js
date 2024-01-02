@@ -50,3 +50,17 @@ const page1Animation = () => {
   gsap.from("ul", { opacity: 0, duration: 1, x: -90 });
 };
 page1Animation();
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from("#page2-aboutus", {
+  opacity: 0,
+  duration: 1,
+  y: 90,
+  scrollTrigger: {
+    trigger: "#page2-aboutus",
+    start: "top 80%", // Adjust this value based on when you want the animation to start
+    end: "bottom bottom", // Adjust this value based on when you want the animation to end
+    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+  },
+});
