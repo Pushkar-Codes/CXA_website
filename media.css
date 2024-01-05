@@ -23,13 +23,17 @@
 
   #page2-aboutus {
     width: 100%;
-    /* background-color: brown; */
-    margin-top: 12px;
+    margin-top: 22px;
   }
 
-  #page2-aboutus h2 {
+  #page2-aboutus h1 {
     margin-left: 10px;
-    font-size: xx-large;
+    font-size: 2em;
+  }
+
+  #page2-aboutus hr {
+    margin-left: 10px;
+    width: 90%;
   }
 
   #page2-aboutus p {
@@ -37,6 +41,28 @@
     font-size: small;
     width: 90%;
     margin-top: 8px;
+  }
+
+  #work {
+    top: 55%;
+  }
+
+  #page2-video {
+    object-fit: cover;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    transform: scaleX(-1);
+  }
+
+  #work h1 {
+    margin-left: 10px;
+    font-size: 2.5em;
+  }
+
+  #work ul {
+    margin-left: 10px;
+    font-size: large;
   }
 }
 

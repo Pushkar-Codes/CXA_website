@@ -53,13 +53,40 @@ page1Animation();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from("#page2-aboutus", {
+gsap.from("#page2-aboutus p", {
   opacity: 0,
   duration: 1,
-  y: 90,
+  y: 50,
+
   scrollTrigger: {
-    trigger: "#page2-aboutus",
-    start: "top 80%", // Adjust this value based on when you want the animation to start
+    trigger: "#page2-aboutus p",
+    start: "top 100%", // Adjust this value based on when you want the animation to start
+    end: "bottom bottom", // Adjust this value based on when you want the animation to end
+    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+  },
+});
+
+gsap.from("#page2-aboutus hr", {
+  x: -100,
+  duration: 1,
+  opacity: 0,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: "#page2-aboutus hr",
+    start: "top 100%", // Adjust this value based on when you want the animation to start
+    end: "bottom bottom", // Adjust this value based on when you want the animation to end
+    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+  },
+});
+
+gsap.from("#work-list ul li", {
+  opacity: 0,
+  duration: 1,
+  x: -50,
+
+  scrollTrigger: {
+    trigger: "#work-list ul li",
+    start: "top 120%", // Adjust this value based on when you want the animation to start
     end: "bottom bottom", // Adjust this value based on when you want the animation to end
     // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
   },
