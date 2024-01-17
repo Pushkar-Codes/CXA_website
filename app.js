@@ -79,15 +79,32 @@ gsap.from("#page2-aboutus hr", {
   },
 });
 
-gsap.from("#work-list ul li", {
+gsap.from("#work ul li", {
   opacity: 0,
   duration: 1,
   x: -50,
 
   scrollTrigger: {
-    trigger: "#work-list ul li",
+    trigger: "#work ul li",
     start: "top 120%", // Adjust this value based on when you want the animation to start
     end: "bottom bottom", // Adjust this value based on when you want the animation to end
     // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
   },
+});
+
+var tl = new TimelineMax({
+  paused: true,
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const glowButton = document.getElementById("btn-page2");
+
+  // GSAP animation to create a pulsating effect
+  gsap.to(glowButton, {
+    boxShadow: "0 0 10px 5px #dc143c",
+    duration: 0.5,
+    repeat: -1,
+    yoyo: true,
+    ease: "power2.inOut",
+  });
 });

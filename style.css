@@ -67,7 +67,7 @@ body {
 
 #tagline {
   position: absolute;
-  top: 57%;
+  top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -123,26 +123,31 @@ body {
 
 #page2 {
   width: 100%;
-  height: 150vh;
-  /* background: linear-gradient(to bottom, rgb(5, 18, 47), rgb(10, 10, 10)); */
-  background-color: #050f1d;
+  height: 100vh;
+  position: relative;
+}
+
+#page2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.overlay-page2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.886);
 }
 
 #page2-aboutus {
   /* background-color: brown; */
   position: absolute;
-  margin-top: 60px;
   width: 70%;
 }
-
-/* #page2-aboutus h2 {
-  font-family: Encode Sans SC, sans-serif;
-  font-size: 4em;
-  text-align: left;
-  color: aliceblue;
-  margin: 0 98px;
-  font-family: Encode Sans SC, sans-serif;
-} */
 
 #page2-aboutus h1 {
   color: aliceblue;
@@ -150,6 +155,7 @@ body {
   font-weight: bold;
   font-family: Encode Sans SC, sans-serif;
   margin-left: 98px;
+  margin-top: 12px;
 }
 
 #page2-aboutus p {
@@ -169,45 +175,56 @@ body {
 }
 
 #work {
-  width: 100%;
-  height: 75vh;
+  width: 70%;
+  height: 40vh;
   position: absolute;
-  top: 70%;
-  background-color: #050f1d;
+  top: 50%;
+  border-radius: 5px;
+  background-color: rgba(0, 14, 36, 0.343);
 }
 
 #work h1 {
-  color: aliceblue;
-  font-size: 5em;
+  color: #f0f8ff;
+  font-size: 4em;
   font-weight: bold;
   font-family: Encode Sans SC, sans-serif;
   margin-left: 98px;
+  /* margin-top: 290px; */
 }
 
-#work-list {
-  width: 100%;
-  height: 60vh;
-  background-color: #050f1d;
-}
-
-#page2-video {
-  object-fit: cover;
-  position: absolute;
-  height: 60%;
-  width: 100%;
-  transform: scaleX(-1);
-}
-
-#work-list ul {
+#work ul {
   font-family: Open Sans, sans-serif;
-  font-size: 2em;
+  font-size: 1.3em;
   text-align: justify;
   color: aliceblue;
-  margin-left: 105px;
-  margin-top: 38px;
-  list-style: none;
+  margin-left: 120px;
+  /* margin-top: 24px; */
+  list-style: disc;
 }
 
-#work-list ul li {
-  margin-top: 24px;
+#work ul li {
+  margin-top: 10px;
+}
+
+#btn-page2 {
+  border: 2px solid crimson;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  padding: 5px 40px;
+  border-radius: 15px;
+  background: transparent;
+  font-family: Encode Sans Sc, sans-sarif;
+  font-size: large;
+  color: #dc143c;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+#btn-page2 span {
+  font-size: large;
+  margin-left: 5px;
+}
+#btn-page2:hover {
+  transform: scale(1.1);
 }
