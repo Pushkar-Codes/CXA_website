@@ -54,17 +54,6 @@ body {
   height: 200px;
 }
 
-/* #navbar p {
-  color: white;
-  letter-spacing: 4px;
-} */
-
-/* #tageline {
-  position: absolute;
-  z-index: 1;
-  color: white;
-} */
-
 #tagline {
   position: absolute;
   top: 50%;
@@ -119,6 +108,7 @@ body {
 
 #nav-list ul li a {
   text-decoration: none;
+  color: #f0f8ff;
 }
 
 #page2 {
@@ -225,6 +215,127 @@ body {
   font-size: large;
   margin-left: 5px;
 }
+
 #btn-page2:hover {
   transform: scale(1.1);
+}
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(104, 40, 23);
+}
+
+#page3-title {
+  /* border-bottom: 1px solid black; */
+  width: 100%;
+  height: 190px;
+}
+
+#page3-title h1 {
+  color: #f0f8ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 150px;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+#page3-box {
+  background-color: black;
+  width: 85%;
+  height: 60vh;
+  border-radius: 5px;
+
+  margin-top: 50px;
+  display: flex;
+}
+
+#discord-box {
+  width: 30%;
+  height: 60vh;
+  margin-left: 98px;
+  margin-top: 25px;
+}
+
+#whatsapp-box {
+  width: 30%;
+  height: 60vh;
+  margin-top: 25px;
+}
+
+#discord-logo {
+  height: 48px;
+}
+
+#discord-box h4 {
+  color: #f0f8ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  margin: -35px 55px;
+}
+
+#discord-qr {
+  height: 200px;
+  margin-top: 75px;
+}
+
+#discord-box p {
+  color: #f0f8ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+#discord-box p:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
+
+#whatsapp-logo {
+  height: 48px;
+}
+
+#whatsapp-box h4 {
+  color: #f0f8ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  margin: -35px 55px;
+}
+
+#whatsapp-qr {
+  height: 200px;
+  margin-top: 75px;
+}
+
+#whatsapp-box p {
+  color: #f0f8ff;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+#whatsapp-box p:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
+
+#phone-join {
+  width: 20%;
+  height: 8vh;
+  position: relative;
+  top: 80%;
+  left: 10%;
+  color: aliceblue;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+}
+
+#phone-join i {
+  padding-right: 5px;
+  color: #dc143c;
+  font-size: xx-large;
 }

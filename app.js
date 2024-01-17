@@ -51,6 +51,13 @@ const page1Animation = () => {
 };
 page1Animation();
 
+document.addEventListener("DOMContentLoaded", () => {
+  const joinPage = document.getElementById("join-page");
+  joinPage.addEventListener("click", () => {
+    document.getElementById("page3").scrollIntoView({ behavior: "smooth" });
+  });
+});
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from("#page2-aboutus p", {
@@ -60,9 +67,8 @@ gsap.from("#page2-aboutus p", {
 
   scrollTrigger: {
     trigger: "#page2-aboutus p",
-    start: "top 100%", // Adjust this value based on when you want the animation to start
-    end: "bottom bottom", // Adjust this value based on when you want the animation to end
-    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+    start: "top 100%",
+    end: "bottom bottom",
   },
 });
 
@@ -73,9 +79,8 @@ gsap.from("#page2-aboutus hr", {
   ease: "power4.out",
   scrollTrigger: {
     trigger: "#page2-aboutus hr",
-    start: "top 100%", // Adjust this value based on when you want the animation to start
-    end: "bottom bottom", // Adjust this value based on when you want the animation to end
-    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+    start: "top 100%",
+    end: "bottom bottom",
   },
 });
 
@@ -86,9 +91,8 @@ gsap.from("#work ul li", {
 
   scrollTrigger: {
     trigger: "#work ul li",
-    start: "top 120%", // Adjust this value based on when you want the animation to start
-    end: "bottom bottom", // Adjust this value based on when you want the animation to end
-    // scrub: 0.2, // Set to 1 to smoothly scrub through the animation as you scroll
+    start: "top 120%",
+    end: "bottom bottom",
   },
 });
 
@@ -96,15 +100,28 @@ var tl = new TimelineMax({
   paused: true,
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const glowButton = document.getElementById("btn-page2");
 
-  // GSAP animation to create a pulsating effect
   gsap.to(glowButton, {
     boxShadow: "0 0 10px 5px #dc143c",
     duration: 0.5,
     repeat: -1,
     yoyo: true,
-    ease: "power2.inOut",
+    ease: "linear",
+  });
+});
+
+gsap.to("#page3-title h1", {
+  x: "-700%",
+  duration: 25,
+  repeat: -1,
+  ease: "linear",
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btnPage2 = document.getElementById("btn-page2");
+  btnPage2.addEventListener("click", () => {
+    document.getElementById("page3").scrollIntoView({ behavior: "smooth" });
   });
 });
