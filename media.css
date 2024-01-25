@@ -1,4 +1,13 @@
 @media only screen and (max-width: 600px) {
+  :root {
+    /* Do not adjust without git push */
+    --primary-bg-color: #0a1424;
+    --secondary-bg-color: #4a4949;
+    --text-color: #e6f2ff;
+    --accent-color: #dc143c;
+    --overlay-color: rgba(0, 0, 0, 0.8);
+  }
+
   #navbar {
     display: flex;
     /* background-color: #ffffff41; */
@@ -92,4 +101,130 @@
     font-size: large;
     margin-left: 5px;
   } */
+}
+
+@media screen and (min-width: 1920px) {
+  :root {
+    /* Do not adjust without git push */
+    --primary-bg-color: #0a1424;
+    --secondary-bg-color: #4a4949;
+    --text-color: #e6f2ff;
+    --accent-color: #dc143c;
+    --overlay-color: rgba(0, 0, 0, 0.8);
+  }
+
+  body {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  #navbar img {
+    height: 300px;
+  }
+
+  #tagline {
+    width: 950px;
+  }
+
+  #nav-list ul {
+    font-size: x-large;
+    line-height: 60px;
+  }
+
+  #nav-list {
+    top: 30%;
+  }
+
+  #work {
+    height: 450px;
+  }
+
+  #btn-page2 {
+    top: 85%;
+    left: 75%;
+    padding: 6px 45px;
+  }
+
+  #page3-title h1 {
+    margin-bottom: 20px;
+  }
+
+  #page3-box {
+    width: 85%;
+    height: 600px;
+  }
+
+  #discord-box {
+    width: 30%;
+    height: 60vh;
+    margin-left: 98px;
+    margin-top: 25px;
+  }
+
+  #whatsapp-box {
+    width: 30%;
+    height: 60vh;
+    margin-top: 25px;
+  }
+
+  #discord-logo {
+    height: 48px;
+  }
+
+  #discord-box h4 {
+    margin-top: 0;
+  }
+
+  #discord-qr {
+    height: 260px;
+    margin-top: 75px;
+    display: block;
+  }
+
+  #discord-box a {
+    font-size: 1.3em;
+  }
+
+  #whatsapp-logo {
+    height: 48px;
+  }
+
+  #whatsapp-box h4 {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  #whatsapp-qr {
+    height: 260px;
+  }
+
+  #whatsapp-box a {
+    font-size: 1.3em;
+  }
+
+  #event-text {
+    margin-top: -100px;
+  }
+
+  #page4 {
+    height: 100vh;
+  }
+
+  #event-text h1 {
+    font-size: 5.2em;
+  }
+
+  #registration {
+    background-color: #f0f8ff;
+    position: absolute;
+    margin-top: 670px;
+    left: 70%;
+    width: 450px;
+  }
+
+  #registration-text p {
+    color: crimson;
+    font-family: Encode Sans Sc, sans-sarif;
+    font-size: 1.3em;
+  }
 }
