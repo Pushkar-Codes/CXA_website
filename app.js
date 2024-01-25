@@ -125,3 +125,30 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("page3").scrollIntoView({ behavior: "smooth" });
   });
 });
+
+gsap.from("#page3-box", {
+  opacity: 0,
+  duration: 1,
+  x: -50,
+
+  scrollTrigger: {
+    trigger: "#page3-box",
+    start: "top 150%",
+  },
+});
+
+gsap.from("#registration", {
+  opacity: 0,
+  duration: 1,
+  y: 50,
+
+  scrollTrigger: {
+    trigger: "#page4",
+    start: "top 150%",
+  },
+});
+
+document.getElementById("event-page").addEventListener("click", function () {
+  // Smoothly scroll to the target element
+  document.getElementById("page4").scrollIntoView({ behavior: "smooth" });
+});
