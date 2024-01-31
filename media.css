@@ -90,18 +90,128 @@
     border: 2px solid crimson;
     position: absolute;
     top: 80%;
-    left: 5%;
-    padding: 3px 50px;
+    left: 45%;
+    padding: 3px 20px;
     border-radius: 15px;
     font-size: medium;
     border-radius: 7px;
   }
 
-  /* #btn-page2 span {
-    font-size: large;
-    margin-left: 5px;
-  } */
+  #page3-title h1 {
+    font-size: 70px;
+  }
+
+  #page3-box {
+    background-color: black;
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #09101c;
+    margin-top: -50px;
+    margin-left: 12px;
+    display: block;
+  }
+
+  #discord-box {
+    width: 100%;
+    height: 50vh;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  #whatsapp-box {
+    width: 100%;
+    height: 45vh;
+    margin-top: 25px;
+  }
+
+  #discord-logo {
+    height: 58px;
+    padding: 8px 12px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  #discord-box h4 {
+    color: #f0f8ff;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    margin-left: 105px;
+  }
+
+  #discord-qr {
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #discord-box a {
+    display: inline-block;
+    color: #f0f8ff;
+    font-family: Open Sans, sans-serif;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin-left: 50px;
+    text-decoration: none;
+  }
+
+  #whatsapp-logo {
+    height: 58px;
+    padding: 8px 12px;
+    margin-left: 40px;
+    /* margin-top: 30px; */
+  }
+
+  #whatsapp-box h4 {
+    color: #f0f8ff;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    margin-left: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  #whatsapp-qr {
+    height: 200px;
+    margin-left: 47px;
+    margin-top: 50px;
+  }
+
+  #whatsapp-box a {
+    display: inline-block;
+    color: #f0f8ff;
+    font-family: Open Sans, sans-serif;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    margin-left: 50px;
+    text-decoration: none;
+  }
+
+  #phone-join {
+    width: 20%;
+    height: 10vh;
+    position: relative;
+    top: 80%;
+    left: 10%;
+    color: aliceblue;
+    font-family: Open Sans, sans-serif;
+    font-size: 1em;
+    white-space: nowrap;
+  }
+
+  #phone-join i {
+    padding-right: 4px;
+    color: #dc143c;
+
+    font-size: x-large;
+  }
 }
+
+/* Larger screen (full HD to 4K) */
 
 @media screen and (min-width: 1920px) {
   :root {
@@ -152,6 +262,7 @@
   #page3-box {
     width: 85%;
     height: 600px;
+    margin-top: 70px;
   }
 
   #discord-box {
@@ -215,16 +326,16 @@
   }
 
   #registration {
-    background-color: #f0f8ff;
     position: absolute;
     margin-top: 670px;
-    left: 70%;
-    width: 450px;
+    left: 60%;
+    width: 700px;
   }
 
   #registration-text p {
-    color: crimson;
-    font-family: Encode Sans Sc, sans-sarif;
+    color: #f0f8ff;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
   }
 }

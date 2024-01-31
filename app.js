@@ -126,6 +126,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.getElementById("event-page").addEventListener("click", function () {
+  document.getElementById("page4").scrollIntoView({ behavior: "smooth" });
+});
+
 gsap.from("#page3-box", {
   opacity: 0,
   duration: 1,
@@ -148,7 +152,13 @@ gsap.from("#registration", {
   },
 });
 
-document.getElementById("event-page").addEventListener("click", function () {
-  // Smoothly scroll to the target element
-  document.getElementById("page4").scrollIntoView({ behavior: "smooth" });
+gsap.from("#event-text", {
+  opacity: 0,
+  duration: 1,
+  x: -50,
+
+  scrollTrigger: {
+    trigger: "#page4",
+    start: "top 170%",
+  },
 });
