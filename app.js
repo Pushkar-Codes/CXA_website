@@ -130,6 +130,12 @@ document.getElementById("event-page").addEventListener("click", function () {
   document.getElementById("page4").scrollIntoView({ behavior: "smooth" });
 });
 
+document
+  .getElementById("board-memebers")
+  .addEventListener("click", function () {
+    document.getElementById("page6").scrollIntoView({ behavior: "smooth" });
+  });
+
 gsap.from("#page3-box", {
   opacity: 0,
   duration: 1,
