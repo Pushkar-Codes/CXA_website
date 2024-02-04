@@ -39,6 +39,33 @@ const locoMotive = () => {
 };
 locoMotive();
 
+// Updating the background video here for smaller screen
+
+function updateVideoSource() {
+  var videoElement = document.getElementById("mainVideo");
+
+  // Check the screen width using matchMedia
+  var isSmallScreen = window.matchMedia("(max-width: 767px)").matches;
+
+  // Log screen width for debugging
+  console.log("Screen Width:", window.innerWidth);
+
+  // Update video source based on screen width
+  videoElement.src = isSmallScreen
+    ? "videos/pexels-cottonbro-8721926 (2160p).mp4"
+    : "videos/pexels-cottonbro-8721932 (2160p).mp4";
+
+  // Log updated video source for debugging
+  console.log("Updated Video Source:", videoElement.src);
+
+  // Reload the video to apply the changes
+  videoElement.load();
+}
+
+// Update the video source on page load and window resize
+window.addEventListener("load", updateVideoSource);
+window.addEventListener("resize", updateVideoSource);
+
 const page1Animation = () => {
   gsap.from("img", {
     opacity: 0,

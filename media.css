@@ -338,4 +338,42 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3em;
   }
+
+  #page6 {
+    height: 100vh;
+  }
+
+  #tab-row1 {
+    gap: 200px;
+  }
+  #tab-row2 {
+    gap: 200px;
+  }
+  #tab-row3 {
+    gap: 200px;
+  }
+
+  #member1 h2 {
+    margin-left: -227px;
+  }
+
+  #member2 h2 {
+    margin-left: -254px;
+  }
+
+  #member3 h2 {
+    margin-left: -196px;
+  }
+
+  #member4 h2 {
+    margin-left: -177px;
+  }
+
+  #member5 h2 {
+    margin-left: -247px;
+  }
+
+  #member6 h1 {
+    margin-left: -150px;
+  }
 }
