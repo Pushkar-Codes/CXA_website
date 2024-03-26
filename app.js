@@ -160,7 +160,7 @@ document.getElementById("event-page").addEventListener("click", function () {
 document
   .getElementById("board-memebers")
   .addEventListener("click", function () {
-    document.getElementById("page6").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("page5").scrollIntoView({ behavior: "smooth" });
   });
 
 gsap.from("#page3-box", {
@@ -195,3 +195,60 @@ gsap.from("#event-text", {
     start: "top 170%",
   },
 });
+
+const dynamicText = document.querySelector("h1 span");
+const words = ["Events", "Hacathons", "Tech Fest", "& More"];
+// Variables to track the position and deletion status of the word
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typeEffect = () => {
+  const currentWord = words[wordIndex];
+  const currentChar = currentWord.substring(0, charIndex);
+  dynamicText.textContent = currentChar;
+  dynamicText.classList.add("stop-blinking");
+  if (!isDeleting && charIndex < currentWord.length) {
+    // If condition is true, type the next character
+    charIndex++;
+    setTimeout(typeEffect, 200);
+  } else if (isDeleting && charIndex > 0) {
+    // If condition is true, remove the previous character
+    charIndex--;
+    setTimeout(typeEffect, 100);
+  } else {
+    // If word is deleted then switch to the next word
+    isDeleting = !isDeleting;
+    dynamicText.classList.remove("stop-blinking");
+    wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+    setTimeout(typeEffect, 1200);
+  }
+};
+typeEffect();
+
+const dynamicTitleText = document.querySelector("#lower-div h1 span");
+const titles = ["join!", "fasten!", "team up!", "engage!"];
+let titleIndex = 0;
+let titleCharIndex = 0;
+let isTitleDeleting = false;
+
+const typeTitleEffect = () => {
+  const currentTitle = titles[titleIndex];
+  const currentTitleChar = currentTitle.substring(0, titleCharIndex);
+  dynamicTitleText.textContent = currentTitleChar;
+
+  if (!isTitleDeleting && titleCharIndex < currentTitle.length) {
+    titleCharIndex++;
+    setTimeout(typeTitleEffect, 100); // Adjusted timeout to 100ms for faster typing
+  } else if (isTitleDeleting && titleCharIndex > 0) {
+    titleCharIndex--;
+    setTimeout(typeTitleEffect, 50); // Adjusted timeout to 50ms for faster deletion
+  } else {
+    isTitleDeleting = !isTitleDeleting;
+    titleIndex = !isTitleDeleting
+      ? (titleIndex + 1) % titles.length
+      : titleIndex;
+    setTimeout(typeTitleEffect, 600); // Adjusted timeout to 600ms for faster switch between words
+  }
+};
+
+typeTitleEffect();

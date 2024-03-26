@@ -97,7 +97,7 @@ body {
   height: 30vh;
 }
 
-#join-page {
+/* #join-page {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -114,7 +114,7 @@ body {
 #board-memebers:hover {
   color: crimson;
   transform: scale(1.1);
-}
+} */
 
 #nav-list ul {
   list-style: none;
@@ -135,6 +135,10 @@ body {
   text-decoration: none;
   color: #f0f8ff;
 }
+#nav-list ul li:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
 
 #nav-list ul li a:hover {
   color: crimson;
@@ -143,7 +147,7 @@ body {
 
 #page2 {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 
@@ -200,12 +204,14 @@ body {
   position: absolute;
   top: 50%;
   border-radius: 5px;
-  background-color: rgba(0, 14, 36, 0.343);
+  margin-left: 98px;
+  /* background-color: rgba(0, 14, 36, 0.343); */
+  background-color: #f0f8ff;
   box-shadow: 0 4px 8px #09101c64;
 }
 
 #work h1 {
-  color: #f0f8ff;
+  color: var(--primary-bg-color);
   font-size: 4em;
   font-weight: bold;
   font-family: Encode Sans SC, sans-serif;
@@ -217,7 +223,7 @@ body {
   font-family: Open Sans, sans-serif;
   font-size: 1.3em;
   text-align: justify;
-  color: aliceblue;
+  color: var(--primary-bg-color);
   margin-left: 120px;
   /* margin-top: 24px; */
   list-style: disc;
@@ -253,8 +259,9 @@ body {
 
 #page3 {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(to bottom, #595858, #09101c);
+  height: 105vh;
+  background-color: var(--primary-bg-color);
+  /* background: linear-gradient(to bottom, #595858, #09101c); */
 }
 
 #page3-title {
@@ -273,13 +280,14 @@ body {
 }
 
 #page3-box {
-  background-color: black;
-  width: 85%;
+  background-color: aliceblue;
+  width: 80%;
   height: 460px;
   border-radius: 5px;
-  box-shadow: 0 4px 8px #09101c;
+  box-shadow: 0 4px 5px #0000006e;
   margin-top: 50px;
   display: flex;
+  margin-left: 98px;
 }
 
 #discord-box {
@@ -300,7 +308,7 @@ body {
 }
 
 #discord-box h4 {
-  color: #f0f8ff;
+  color: var(--primary-bg-color);
   font-family: Open Sans, sans-serif;
   font-size: 1em;
   margin: -35px 55px;
@@ -310,11 +318,12 @@ body {
   height: 200px;
   margin-top: 75px;
   display: block;
+  box-shadow: 0 4px 5px #0000006e;
 }
 
 #discord-box a {
   display: inline-block;
-  color: #f0f8ff;
+  color: var(--primary-bg-color);
   font-family: Open Sans, sans-serif;
   font-size: 1em;
   margin-top: 15px;
@@ -333,7 +342,7 @@ body {
 }
 
 #whatsapp-box h4 {
-  color: #f0f8ff;
+  color: var(--primary-bg-color);
   font-family: Open Sans, sans-serif;
   font-size: 1em;
   margin: -35px 55px;
@@ -343,11 +352,12 @@ body {
   height: 200px;
   margin-top: 75px;
   display: block;
+  box-shadow: 0 4px 5px #0000006e;
 }
 
 #whatsapp-box a {
   display: inline-block;
-  color: #f0f8ff;
+  color: var(--primary-bg-color);
   font-family: Open Sans, sans-serif;
   font-size: 1em;
   margin-top: 15px;
@@ -367,7 +377,7 @@ body {
   position: relative;
   top: 80%;
   left: 10%;
-  color: aliceblue;
+  color: var(--primary-bg-color);
   font-family: Open Sans, sans-serif;
   font-size: 1em;
 }
@@ -411,7 +421,7 @@ body {
 #event-text h1 {
   color: #f0f8ff;
   font-family: Encode Sans Sc, sans-sarif;
-  font-size: 5em;
+  font-size: 4em;
   line-height: 120px;
 }
 
@@ -430,49 +440,6 @@ body {
 }
 
 #page5 {
-  background-color: #09101c;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-#page5-logo {
-  position: fixed;
-  height: 250px;
-}
-#title {
-  position: relative;
-  left: 36%;
-}
-#page5 h1 {
-  color: #fff;
-  margin-top: 240px;
-  font-size: 5em;
-
-  white-space: nowrap;
-  /* overflow: hidden; */
-  font-family: Encode Sans Sc, sans-sarif;
-}
-
-#ourVison-text {
-  /* border: 1px solid white; */
-  width: 100%;
-  height: 170px;
-  position: relative;
-  top: 50%;
-  right: 14%;
-  display: flex;
-}
-
-#ourVison-text p {
-  color: #f0f8ff;
-  font-family: Open Sans, sans-serif;
-  font-size: 1.2em;
-  text-align: justify;
-}
-
-#page6 {
   position: relative;
   height: 130vh;
   width: 100%;
@@ -481,15 +448,15 @@ body {
   padding: 0 70px;
 }
 
-#page6 h1 {
-  color: #fff;
+#page5 h1 {
+  color: aliceblue;
 
   font-size: 4em;
   margin-top: 30px;
   font-family: Encode Sans Sc, sans-sarif;
 }
 
-#page6-video {
+#page5-video {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -498,20 +465,20 @@ body {
   transform: translateX(-50%);
 }
 
-.overlay6 {
+.overlay5 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(3, 41, 66, 0.809);
+  background-color: rgba(4, 35, 55, 0.724);
 }
 
-#page6-title {
+#page5-title {
   z-index: 1;
 }
 
-#page6-title h1 {
+#page5-title h1 {
   color: aliceblue;
   font-family: Encode Sans Sc, sans-sarif;
   margin-bottom: 34px;
@@ -579,4 +546,108 @@ body {
 
 #p-div {
   margin-top: 30px;
+}
+
+#page6 {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-bg-color);
+}
+
+#upper-div {
+  border: 1px solid black;
+  width: 100%;
+  height: 50vh;
+}
+
+#title {
+  margin-left: 98px;
+  margin-top: 18px;
+  font-size: xx-large;
+  color: aliceblue;
+  font-family: Encode Sans Sc, sans-sarif;
+  margin-bottom: 24px;
+}
+
+#title hr {
+  border: none;
+  height: 1px;
+  background-color: aliceblue;
+  width: 95%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.951);
+}
+
+#ourVison-text {
+  width: 90%;
+  margin-left: 98px;
+  font-size: medium;
+  color: aliceblue;
+  font-family: Open Sans, sans-serif;
+}
+
+#lower-div {
+  border: 1px solid black;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+}
+
+#lower-left {
+  width: 30%;
+  border: 1px solid black;
+  margin-left: 98px;
+}
+
+#connect-text {
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+}
+
+#connect-text h1 {
+  font-size: 3.5em;
+  color: aliceblue;
+  font-weight: 300;
+  font-family: Open Sans, sans-serif;
+  margin-bottom: 24px;
+}
+
+#connect-link {
+  display: flex;
+  flex-direction: column;
+}
+
+#connect-link img {
+  height: 39px;
+  width: 40px;
+  /* padding: 0 18px; */
+  margin-top: 40px;
+}
+
+#connect-link a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: large;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  font-family: Open Sans, sans-serif;
+  display: inline-block;
+}
+
+#connect-link a:hover {
+  color: crimson;
+  transform: scale(1.1);
+}
+
+#lower-right {
+  border: 1px solid red;
+  width: 60%;
+  display: flex;
+}
+
+#lower-nav-list {
+  border: 1px solid green;
+
+  color: aliceblue;
+  width: 30%;
 }
