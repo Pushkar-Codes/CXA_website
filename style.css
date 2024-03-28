@@ -556,8 +556,9 @@ body {
 
 #upper-div {
   border: 1px solid black;
+  /* background-color: #595858; */
   width: 100%;
-  height: 50vh;
+  height: 35vh;
 }
 
 #title {
@@ -586,22 +587,34 @@ body {
 }
 
 #lower-div {
-  border: 1px solid black;
+  /* border: 1px solid yellow; */
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
 }
 
 #lower-left {
-  width: 30%;
-  border: 1px solid black;
-  margin-left: 98px;
+  width: 50%;
+  /* border-right: 1px solid blanchedalmond; */
+}
+
+#footer-img {
+  /* background-color: gray; */
+  height: auto;
+  margin-left: 80px;
+}
+
+#footer-logo {
+  height: 200px;
+  /* background-color: red; */
 }
 
 #connect-text {
-  border: 1px solid black;
-  width: 100%;
+  /* border: 1px solid red; */
+  width: 80%;
   height: 100px;
+  margin-left: 98px;
+  margin-top: -40px;
 }
 
 #connect-text h1 {
@@ -612,16 +625,15 @@ body {
   margin-bottom: 24px;
 }
 
+#connect-text span {
+  color: #ff7700;
+}
+
 #connect-link {
   display: flex;
   flex-direction: column;
-}
-
-#connect-link img {
-  height: 39px;
-  width: 40px;
-  /* padding: 0 18px; */
-  margin-top: 40px;
+  margin-left: 98px;
+  width: 190px;
 }
 
 #connect-link a {
@@ -634,20 +646,50 @@ body {
   display: inline-block;
 }
 
+#footer-whatsapp {
+  margin-top: 15px;
+}
+
+#contact-us {
+  margin-top: 15px;
+}
+
+#privacy {
+  margin-top: 15px;
+}
+
 #connect-link a:hover {
   color: crimson;
   transform: scale(1.1);
 }
 
 #lower-right {
-  border: 1px solid red;
-  width: 60%;
-  display: flex;
+  width: 100%;
+  height: 60vh;
+  /* background-color: #595858; */
+  /* display: flex; */
 }
 
-#lower-nav-list {
-  border: 1px solid green;
+#srm-mark {
+  position: relative;
+  top: 80%;
+  left: 59%;
+}
 
+#srm-mark img {
+  height: 50px;
+}
+
+#copyright {
+  position: relative;
+  top: 80%;
+  left: 60%;
+  height: 50px;
+}
+
+#copyright h2 {
+  font-size: 1em;
   color: aliceblue;
-  width: 30%;
+  font-weight: 300;
+  font-family: Open Sans, sans-serif;
 }

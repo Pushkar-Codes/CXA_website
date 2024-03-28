@@ -533,4 +533,32 @@
   #card {
     width: 600px;
   }
+
+  #ourVison-text p {
+    font-size: x-large;
+  }
+
+  #lower-left {
+    margin-top: 50px;
+  }
+
+  #footer-logo {
+    height: 300px;
+  }
+
+  #connect-text {
+    margin-top: -80px;
+  }
+
+  #connect-text h1 {
+    font-size: 3.8em;
+  }
+
+  #connect-link a {
+    font-size: x-large;
+  }
+
+  #footer-discord {
+    margin-top: 40px;
+  }
 }
