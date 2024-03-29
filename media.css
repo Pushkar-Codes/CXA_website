@@ -37,7 +37,7 @@
   #page2 {
     overflow: hidden;
     position: relative;
-    height: 70vh;
+    height: 90vh;
   }
 
   #page2-aboutus {
@@ -63,11 +63,10 @@
   }
 
   #work {
-    top: 40%;
-    height: 40vh;
-    left: 5%;
+    top: 42%;
+    margin-left: 10px;
     width: 80%;
-    padding: 5px 8px;
+    padding: 0 8px;
   }
 
   #work h1 {
@@ -89,12 +88,16 @@
   #btn-page2 {
     border: 2px solid crimson;
     position: absolute;
-    top: 80%;
-    left: 45%;
-    padding: 3px 20px;
+    top: 75%;
+    left: 55%;
+    padding: 3px 14px;
     border-radius: 15px;
-    font-size: medium;
+    font-size: small;
     border-radius: 7px;
+  }
+
+  #btn-page2 span {
+    font-size: small;
   }
 
   #page3-title h1 {
@@ -106,13 +109,13 @@
   }
 
   #page3-box {
-    background-color: black;
+    background-color: aliceblue;
     width: 90%;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px #09101c;
     margin-top: -50px;
-    margin-left: 12px;
+    margin-left: 0;
     display: block;
   }
 
@@ -137,7 +140,7 @@
   }
 
   #discord-box h4 {
-    color: #f0f8ff;
+    color: var(--primary-bg-color);
     font-family: Open Sans, sans-serif;
     font-size: 16px;
     margin-left: 105px;
@@ -151,7 +154,7 @@
 
   #discord-box a {
     display: inline-block;
-    color: #f0f8ff;
+    color: var(--primary-bg-color);
     font-family: Open Sans, sans-serif;
     font-size: 1em;
     margin-top: 15px;
@@ -169,7 +172,7 @@
   }
 
   #whatsapp-box h4 {
-    color: #f0f8ff;
+    color: var(--primary-bg-color);
     font-family: Open Sans, sans-serif;
     font-size: 16px;
     margin-left: 95px;
@@ -185,7 +188,7 @@
 
   #whatsapp-box a {
     display: inline-block;
-    color: #f0f8ff;
+    color: var(--primary-bg-color);
     font-family: Open Sans, sans-serif;
     font-size: 1em;
     margin-top: 15px;
@@ -201,7 +204,6 @@
     position: relative;
     top: 80%;
     left: 10%;
-    color: aliceblue;
     font-family: Open Sans, sans-serif;
     font-size: 1em;
     white-space: nowrap;
@@ -210,8 +212,12 @@
   #phone-join i {
     padding-right: 4px;
     color: #dc143c;
-
     font-size: x-large;
+  }
+
+  #phone-join p {
+    text-decoration: none;
+    color: var(--primary-bg-color);
   }
 
   #page4 {
@@ -346,6 +352,73 @@
 
   #p-div p {
     font-size: small;
+  }
+
+  #title {
+    margin-left: 0;
+  }
+
+  #lower-left {
+    width: 70%;
+    height: auto;
+  }
+
+  #lower-right {
+    width: 50%;
+  }
+
+  #ourVison-text {
+    margin-left: 0;
+  }
+
+  #ourVison-text p {
+    font-size: small;
+  }
+
+  #footer-img {
+    margin-left: 0;
+    margin-top: 120px;
+  }
+
+  #footer-img img {
+    height: 150px;
+  }
+
+  #connect-text {
+    margin-left: 12px;
+    width: 100%;
+  }
+
+  #connect-text h1 {
+    font-size: 2em;
+  }
+
+  #connect-link {
+    margin-left: 12px;
+  }
+
+  #srm-mark {
+    position: relative;
+    top: 91%;
+    left: 6%;
+  }
+
+  #srm-mark img {
+    height: 30px;
+  }
+
+  #copyright {
+    position: relative;
+    top: 91%;
+    left: 10%;
+    height: 50px;
+  }
+
+  #copyright h2 {
+    font-size: smaller;
+    color: aliceblue;
+    font-weight: 300;
+    font-family: Open Sans, sans-serif;
   }
 }
 
