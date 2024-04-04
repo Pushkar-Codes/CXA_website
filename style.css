@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap");
 
 :root {
-  --primary-bg-color: #09101c;
+  --primary-bg-color: rgba(14, 16, 15);
   --secondary-bg-color: #595858;
   --text-color: #f0f8ff;
   --accent-color: crimson;
@@ -77,7 +77,7 @@ body {
 }
 
 #tagline span {
-  color: crimson;
+  color: var(--accent-color);
 }
 
 #tagline h2 {
@@ -96,25 +96,6 @@ body {
   display: flex;
   height: 30vh;
 }
-
-/* #join-page {
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-#join-page:hover {
-  color: crimson;
-  transform: scale(1.1);
-}
-
-#event-page:hover {
-  color: crimson;
-  transform: scale(1.1);
-}
-
-#board-memebers:hover {
-  color: crimson;
-  transform: scale(1.1);
-} */
 
 #nav-list ul {
   list-style: none;
@@ -135,13 +116,14 @@ body {
   text-decoration: none;
   color: #f0f8ff;
 }
+
 #nav-list ul li:hover {
-  color: crimson;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
 #nav-list ul li a:hover {
-  color: crimson;
+  color: var(--accent-color);
   transform: scale(1.1);
 }
 
@@ -164,7 +146,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.886);
+  background: linear-gradient(to top, rgb(14, 16, 15), #000000da);
 }
 
 #page2-aboutus {
@@ -195,7 +177,7 @@ body {
   border: none;
   margin-left: 98px;
   height: 8px;
-  background-color: crimson;
+  background-color: var(--accent-color);
 }
 
 #work {
@@ -206,7 +188,7 @@ body {
   border-radius: 5px;
   margin-left: 98px;
   /* background-color: rgba(0, 14, 36, 0.343); */
-  background-color: #f0f8ff;
+  background-color: rgb(203, 209, 206);
   box-shadow: 0 4px 8px #09101c64;
 }
 
@@ -234,7 +216,7 @@ body {
 }
 
 #btn-page2 {
-  border: 2px solid crimson;
+  border: 2px solid var(--accent-color);
   position: absolute;
   top: 75%;
   left: 75%;
@@ -261,7 +243,7 @@ body {
   width: 100%;
   height: 105vh;
   background-color: var(--primary-bg-color);
-  /* background: linear-gradient(to bottom, #595858, #09101c); */
+  /* background: linear-gradient(to right, #09101c, #000000cb); */
 }
 
 #page3-title {
@@ -272,7 +254,7 @@ body {
 }
 
 #page3-title h1 {
-  color: #f0f8ff;
+  color: var(--accent-color);
   font-family: Open Sans, sans-serif;
   font-size: 150px;
   font-weight: bolder;
@@ -280,7 +262,7 @@ body {
 }
 
 #page3-box {
-  background-color: aliceblue;
+  background-color: rgb(203, 209, 206);
   width: 80%;
   height: 460px;
   border-radius: 5px;
@@ -394,15 +376,14 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+  background: linear-gradient(to right, #09101c, #000000cb);
 }
 
-#page4-video {
+#page4 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 #event-text {
@@ -441,7 +422,7 @@ body {
 
 #page5 {
   position: relative;
-  height: 130vh;
+  height: 245vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -471,7 +452,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(4, 35, 55, 0.724);
+  background-color: rgba(14, 16, 15, 0.808);
 }
 
 #page5-title {
@@ -548,21 +529,14 @@ body {
   margin-top: 30px;
 }
 
-#page6 {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--primary-bg-color);
-}
-
 #upper-div {
-  border: 1px solid black;
-  /* background-color: #595858; */
+  border-top: 1px solid (7, 13, 21, 0.885);
   width: 100%;
   height: 35vh;
+  position: relative;
 }
 
 #title {
-  margin-left: 98px;
   margin-top: 18px;
   font-size: xx-large;
   color: aliceblue;
@@ -573,23 +547,26 @@ body {
 #title hr {
   border: none;
   height: 1px;
-  background-color: aliceblue;
+  background-color: var(--accent-color);
   width: 95%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.951);
 }
 
 #ourVison-text {
   width: 90%;
-  margin-left: 98px;
+
   font-size: medium;
   color: aliceblue;
   font-family: Open Sans, sans-serif;
 }
 
 #lower-div {
-  /* border: 1px solid yellow; */
+  border-radius: 10px;
+  position: relative;
+  margin-top: 150px;
   width: 100%;
-  height: 60vh;
+  height: 65vh;
+  background-color: var(--primary-bg-color);
   display: flex;
 }
 
@@ -605,16 +582,16 @@ body {
 }
 
 #footer-logo {
-  height: 200px;
+  height: 120px;
   /* background-color: red; */
 }
 
 #connect-text {
   /* border: 1px solid red; */
-  width: 80%;
+  width: 90%;
   height: 100px;
   margin-left: 98px;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 
 #connect-text h1 {
@@ -626,7 +603,7 @@ body {
 }
 
 #connect-text span {
-  color: #ff7700;
+  color: var(--accent-color);
 }
 
 #connect-link {
@@ -656,6 +633,11 @@ body {
 
 #privacy {
   margin-top: 15px;
+}
+
+#srm-footer {
+  margin-top: 15px;
+  width: 205px;
 }
 
 #connect-link a:hover {
@@ -692,4 +674,21 @@ body {
   color: aliceblue;
   font-weight: 300;
   font-family: Open Sans, sans-serif;
+}
+
+/* .......................Pages styling starts from here......................... */
+
+/* privacy page styling */
+
+#wrapper #content {
+  width: 100%;
+  height: auto;
+  background-color: #09101c;
+}
+
+#content h1 {
+  font-family: Open Sans, sans-serif;
+  font-size: xx-large;
+  margin-left: 98px;
+  font-weight: 500;
 }
