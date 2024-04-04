@@ -273,7 +273,7 @@
 
   #page5 {
     padding: 0 20px;
-    height: 300vh;
+    height: auto;
   }
 
   #page5 video {
@@ -421,10 +421,11 @@
   #srm-mark {
     position: relative;
     top: 91%;
+    left: 0.1%;
   }
 
   #srm-mark img {
-    height: 25px;
+    height: 22px;
     margin-top: 40px;
   }
 
