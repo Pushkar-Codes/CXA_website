@@ -338,6 +338,31 @@
         </div>
       </div>
     </div>
+    <script>
+      function updateVideoSource() {
+        var videoElement = document.getElementById("mainVideo");
+
+        // Check if the screen width is less than or equal to 767px
+        var isSmallScreen = window.innerWidth <= 767;
+
+        // Update video source based on screen width
+        videoElement.src = isSmallScreen
+          ? "videos/mobile-video.mp4" // Path to mobile video
+          : "videos/pexels-cottonbro-8721932 (2160p).mp4"; // Default video
+
+        // Check if video is loaded
+        videoElement.addEventListener("canplaythrough", function () {
+          videoElement.play(); // Start playing the video
+        });
+
+        // Reload the video to apply the changes
+        videoElement.load();
+      }
+
+      // Update the video source on page load and window resize
+      window.addEventListener("load", updateVideoSource);
+      window.addEventListener("resize", updateVideoSource);
+    </script>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>

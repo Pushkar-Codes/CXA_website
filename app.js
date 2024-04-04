@@ -41,24 +41,24 @@ locoMotive();
 
 // Updating the background video here for smaller screen
 
-function updateVideoSource() {
-  var videoElement = document.getElementById("mainVideo");
+// function updateVideoSource() {
+//   var videoElement = document.getElementById("mainVideo");
 
-  // Check if the screen width is less than or equal to 767px
-  var isSmallScreen = window.innerWidth <= 767;
+//   // Check if the screen width is less than or equal to 767px
+//   var isSmallScreen = window.innerWidth <= 767;
 
-  // Update video source based on screen width
-  videoElement.src = isSmallScreen
-    ? "videos/mobile-video.mp4" // Path to mobile video
-    : "videos/pexels-cottonbro-8721932 (2160p).mp4"; // Default video
+//   // Update video source based on screen width
+//   videoElement.src = isSmallScreen
+//     ? "videos/mobile-video.mp4" // Path to mobile video
+//     : "videos/pexels-cottonbro-8721932 (2160p).mp4"; // Default video
 
-  // Reload the video to apply the changes
-  videoElement.load();
-}
+//   // Reload the video to apply the changes
+//   videoElement.load();
+// }
 
-// Update the video source on page load and window resize
-window.addEventListener("load", updateVideoSource);
-window.addEventListener("resize", updateVideoSource);
+// // Update the video source on page load and window resize
+// window.addEventListener("load", updateVideoSource);
+// window.addEventListener("resize", updateVideoSource);
 // --------
 
 // window.onload = function () {
