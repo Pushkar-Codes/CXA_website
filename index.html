@@ -354,6 +354,8 @@
 
         // Check if the video source is already set to the correct one
         if (video.src !== videoSrc) {
+          video.autoplay = true; // Add autoplay attribute
+          video.loop = true;
           video.src = videoSrc;
           video.load(); // Reload the video
         }
