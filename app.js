@@ -41,59 +41,59 @@ locoMotive();
 
 // // Updating the background video here for smaller screen
 
-// function updateVideoSource() {
-//   var videoElement = document.getElementById("mainVideo");
+function updateVideoSource() {
+  var videoElement = document.getElementById("mainVideo");
 
-//   // Check the screen width using matchMedia
-//   var isSmallScreen = window.matchMedia("(max-width: 767px)").matches;
+  // Check the screen width using matchMedia
+  var isSmallScreen = window.matchMedia("(max-width: 767px)").matches;
 
-//   // Log screen width for debugging
-//   console.log("Screen Width:", window.innerWidth);
+  // Log screen width for debugging
+  console.log("Screen Width:", window.innerWidth);
 
-//   // Update video source based on screen width
-//   videoElement.src = isSmallScreen
-//     ? "videos/pexels-cottonbro-8721926 (2160p).mp4"
-//     : "videos/pexels-cottonbro-8721932 (2160p).mp4";
+  // Update video source based on screen width
+  videoElement.src = isSmallScreen
+    ? "videos/pexels-cottonbro-8721926 (2160p).mp4"
+    : "videos/pexels-cottonbro-8721932 (2160p).mp4";
 
-//   // Log updated video source for debugging
-//   console.log("Updated Video Source:", videoElement.src);
+  // Log updated video source for debugging
+  console.log("Updated Video Source:", videoElement.src);
 
-//   // Reload the video to apply the changes
-//   videoElement.load();
-// }
+  // Reload the video to apply the changes
+  videoElement.load();
+}
 
-// // Update the video source on page load and window resize
-// window.addEventListener("load", updateVideoSource);
-// window.addEventListener("resize", updateVideoSource);
+// Update the video source on page load and window resize
+window.addEventListener("load", updateVideoSource);
+window.addEventListener("resize", updateVideoSource);
 
 // --------
 
-window.onload = function () {
-  var video = document.getElementById("mainVideo");
+// window.onload = function () {
+//   var video = document.getElementById("mainVideo");
 
-  // Function to check if screen size is mobile
-  function isMobileScreen() {
-    return window.innerWidth <= 768; // Adjust this value as needed
-  }
+//   // Function to check if screen size is mobile
+//   function isMobileScreen() {
+//     return window.innerWidth <= 768; // Adjust this value as needed
+//   }
 
-  // Function to change video source based on screen size
-  function changeVideoSource() {
-    if (isMobileScreen()) {
-      video.src = "videos/pexels-cottonbro-8721926 (2160p).mp4"; // Path to mobile video
-    } else {
-      video.src = "/videos/pexels-cottonbro-8721932 (2160p).mp4"; // Default video
-    }
-    video.play(); // Play the video
-  }
+//   // Function to change video source based on screen size
+//   function changeVideoSource() {
+//     if (isMobileScreen()) {
+//       video.src = "videos/pexels-cottonbro-8721932 (2160p).mp4"; // Path to mobile video
+//     } else {
+//       video.src = "/videos/pexels-cottonbro-8721932 (2160p).mp4"; // Default video
+//     }
+//     video.play(); // Play the video
+//   }
 
-  // Call the function initially
-  changeVideoSource();
+//   // Call the function initially
+//   changeVideoSource();
 
-  // Update video source on window resize
-  window.onresize = function () {
-    changeVideoSource();
-  };
-};
+//   // Update video source on window resize
+//   window.onresize = function () {
+//     changeVideoSource();
+//   };
+// };
 
 const page1Animation = () => {
   gsap.from("img", {
